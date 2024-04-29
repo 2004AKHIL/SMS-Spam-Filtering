@@ -1,0 +1,18 @@
+1. Import necessary libraries for data processing, visualization, and machine learning, including pandas, numpy, re, matplotlib.pyplot, seaborn, nltk, and various modules from scikit-learn.
+2. Download the "stopwords" package from NLTK, which is used to remove common words that don't contribute much to text analysis.
+3. Load the dataset from `SMSSpamCollection.txt` with column names "label" and "message." Drop duplicates and reset the index to ensure consistency.
+4. Create a count plot to visualize the distribution of spam and ham messages, using seaborn. Label the x-axis as "SMS Classification" and the y-axis as "Count."
+5. Create a corpus to store preprocessed messages, using PorterStemmer for word stemming. For each message in the dataset, perform the following steps:
+   - Remove non-alphabetic characters with regular expressions.
+   - Convert to lowercase.
+   - Tokenize into words.
+   - Remove stopwords.
+   - Stem each word.
+   - Join the processed words and add to the corpus.
+6. Use CountVectorizer to convert the corpus into a term-document matrix with a maximum of 2,500 features. Convert the labels into a binary format, with "spam" as 1 and "ham" as 0.
+7. Split the data into training and testing sets with an 80-20 ratio, ensuring reproducibility by setting a random state.
+8. Train a Multinomial Naive Bayes classifier with a smoothing parameter (`alpha = 0.1`) on the training data.
+9. Use the trained classifier to predict labels for the testing set and calculate the accuracy score to evaluate model performance. Print the test set accuracy.
+10. Define a function `predict_spam` that takes a message as input, preprocesses it similarly to the corpus, and predicts whether it's spam or ham using the trained classifier.
+11. Test the `predict_spam` function with a sample message and print whether it's spam or ham based on the prediction.
+12. Test additional messages with `predict_spam` to verify its effectiveness. Print the corresponding results based on the predictions.
