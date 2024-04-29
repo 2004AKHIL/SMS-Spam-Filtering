@@ -1,0 +1,13 @@
+SMS spam poses significant risks to mobile communication, including privacy breaches and financial fraud. As mobile phones become more ubiquitous, the spread of spam
+messages has drawn the interest of attackers, leading to increased incidents of phishing, scams, and fraudulent activity. This raises concerns about user safety and calls
+for robust spam filtering techniques.Unlike email spam, which is often blocked by advanced filters, SMS spam can bypass these defenses and reach users' mobile devices
+directly. This creates a pathway for spam containing deceptive ads, dangerous links, or phishing attempts designed to steal sensitive information. The challenge is to 
+develop effective spam detection methods that can accurately distinguish between spam and legitimate messages.Efforts to combat SMS spam have explored various approaches.
+Traditional rule-based systems offer a basic level of filtering but often struggle with adaptability due to the evolving nature of spam techniques. Consequently, machine
+learning and natural language processing (NLP) have become the focus of spam detection research. These technologies can analyze patterns in text and learn from data, 
+enabling more dynamic and resilient filtering strategies.This work reviews the latest advancements in SMS spam filtering, with a particular emphasis on deep learning and 
+NLP algorithms. We discuss the challenges in implementing these technologies, such as dealing with class imbalance (where spam may be much less frequent than legitimate
+messages), limited data for training models, and the ever-changing tactics of spammers. The aim is to propose effective solutions to these problems and outline a path for
+further research in this domain.Through an analysis of existing literature, real-world examples, and experimental data, this paper seeks to guide future efforts in 
+developing robust SMS spam filtering systems. The ultimate goal is to enhance user privacy, improve mobile communication security, and create a safer SMS environment. 
+By addressing these issues, we hope to inspire new approaches and encourage innovation in combating SMS spam.
